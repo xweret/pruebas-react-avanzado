@@ -1,7 +1,6 @@
-export function Sumador (){
-    return <h1> component </h1>
-}
-export function UserCard(){
+
+export function UserCard(props){
+    console.log(props);
     return <h1> User Card </h1>
 }
 
