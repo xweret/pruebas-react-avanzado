@@ -1,21 +1,19 @@
-import {UserCard} from './sumador';
-import './App.css';
+import { UserCard } from "./sumador";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <UserCard title="hola mundo"/>
-      <UserCard title="hola react"/>
-      <UserCard title="hola jSx"/>
-      <UserCard title="hola hola js"/>
-      <UserCard title="hola hola marte"/>
-      <UserCard title="hola usuario"
-      nombre="Marta"
-      saldo="45.25610"
+      <UserCard
+        name="Ryan"
+        saldo={32000}
+        married={true}
+        points={[99, 33.3, 22, 2]}
+        adress={{
+          street: "123 main street",
+          city: "New York",
+        }}
       />
-      <UserCard nombre="Gabriel"/>
-
-  
     </div>
   );
 }

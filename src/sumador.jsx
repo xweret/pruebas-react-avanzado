@@ -1,7 +1,7 @@
 
-export function UserCard(props){
-    console.log(props);
-    return <h1> {props.title} {props.nombre} su saldo es: {props.saldo}</h1>
+export function UserCard({title,name,saldo = 0}){
+    console.log(title);
+    return <h1> {title} {name} su saldo es: {saldo}</h1>
 }
 
 
