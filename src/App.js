@@ -11,6 +11,20 @@ function App() {
         city: 'New York'
       }
       }
+      greet = { function(){
+        alert('Hello')
+      }}
+      />
+          <UserCard name='Joe' saldo={32000} married={true}
+      points={[99, 33.3, 22,2]}
+      addres={{
+        street: '24 Flee street',
+        city: 'Chivilcoy'
+      }
+      }
+      greet = { function(){
+        alert('Cia')
+      }}
       />
     </div>
   );

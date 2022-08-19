@@ -1,11 +1,11 @@
-function UserCard({name, saldo, married, addres}) {
-  console.log(name);
+function UserCard({name, saldo, married, addres, greet}) {
+  console.log(name, saldo, married,addres, greet);
   return (
     <div>
       <h1>{name}</h1>
       <p>Su Saldo es de {saldo}💵</p>
-      <p>{married ? "is married" : "is single"}</p>
-      <ul>
+      <p>{married ? "Is married" : "Is single"}</p>
+        <ul>
         <li>
             City: {addres.city}
         </li>
