@@ -1,6 +1,6 @@
-export function Button(params) {   
+export function Button({text}) {   
     return  <button>
-        Mi Boton
+        {text}
     </button>
 
 }

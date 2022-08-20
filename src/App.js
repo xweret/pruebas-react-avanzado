@@ -4,7 +4,7 @@ import { Button } from './button';
 function App() {
   return (
     <div className="App">
-      <Button/>
+      <Button text='click me'/>
       <UserCard name='Ryan' saldo={32000} married={false}
       points={[99, 33.3, 22,2]}
       addres={{
@@ -16,7 +16,7 @@ function App() {
         alert('Hello')
       }}
       />
-            <Button/>
+            <Button text= 'Pagar'/>
           <UserCard name='Joe' saldo={32000} married={true}
       points={[99, 33.3, 22,2]}
       addres={{
@@ -28,7 +28,7 @@ function App() {
         alert('Cia')
       }}
       />
-            <Button/>
+            <Button text='soloboton'/>
     </div>
   );
 }
