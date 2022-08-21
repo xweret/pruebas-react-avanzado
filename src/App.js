@@ -28,7 +28,8 @@ function App() {
         alert('Cia')
       }}
       />
-            <Button text='soloboton'/>
+            <Button text={3}/>
+            <Button/>
     </div>
   );
 }
