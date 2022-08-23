@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types'
 
 export function Button({text = 'default'}) {   
-    return  <button>
+    return  <button onClick={function(){
+        console.log('clikeado')
+    }}>
         {text}
     </button>
 
