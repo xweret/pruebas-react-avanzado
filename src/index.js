@@ -1,15 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import {Posts} from './Post'
+import React,{useState} from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+function Counter(){
+
+const [task, setTask] = useState('')
+
+  return (
+    <div>
+      <input
+      onChange={e => setTask(e.target.value)}
+      /> 
+      <button onClick={() => {
+        alert('La tarea es ' + task)
+      }}>
+        Save
+      </button>
+
+    </div>
+  )
+}
+
 root.render(
-  <>
-  <Posts/>
-  </>
+    <Counter/>
 );
 
 // If you want to start measuring performance in your app, pass a function
