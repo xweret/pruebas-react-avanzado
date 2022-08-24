@@ -1,14 +1,14 @@
-import UserCard from './sumador';
-import './App.css';
-import { Button } from './button';
-import {TaskCard} from './task'
-import {Saludar} from './Saludar'
+// import UserCard from './sumador';
+// import './App.css';
+// import { Button } from './button';
+// import {TaskCard} from './task'
+// import {Saludar} from './Saludar'
 
 
 function App() {
   return (
     <>
-    <TaskCard ready={true}/>
+    {/* <TaskCard ready={true}/>
     <Button/>
     <Saludar/>
     <Button text='Textos'/>
@@ -26,7 +26,7 @@ function App() {
     >
       <h1>Registro</h1>
       <button>Send</button>
-    </form>
+    </form> */}
     </>
   );
 }
