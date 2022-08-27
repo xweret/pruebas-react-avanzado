@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useState, useEffect} from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
@@ -9,6 +9,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 function Counter(){
 
 const [task, setTask] = useState('')
+const [counter, setCounter] = useState(0)
+
+useEffect(()=>{
+  console.log('render')
+},[counter]) 
 
   return (
     <div>
@@ -19,6 +24,16 @@ const [task, setTask] = useState('')
         alert('La tarea es ' + task)
       }}>
         Save
+      </button>
+
+      <hr/>
+
+      <h1>
+        Counter: {counter}
+      </h1>
+
+      <button onClick={() => setCounter(counter + 1)}>
+        Incrementar
       </button>
 
     </div>
