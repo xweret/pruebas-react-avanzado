@@ -13,7 +13,7 @@ const [counter, setCounter] = useState(0)
 
 useEffect(()=>{
   console.log('render')
-},[counter]) 
+},[counter])   
 
   return (
     <div>
